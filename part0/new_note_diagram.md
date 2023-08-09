@@ -28,7 +28,7 @@ sequenceDiagram
     Note right of browser: The browser executes the callback function that renders the notes
 
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
-    browser-->>server: { "note": "our_message" }
+    body: { "note": "our_message" }
     activate server
     server-->>browser: HTML document
     deactivate server
